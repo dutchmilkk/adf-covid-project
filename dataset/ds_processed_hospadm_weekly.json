@@ -1,0 +1,27 @@
+{
+	"name": "ds_processed_hospadm_weekly",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "isADLS_CovidRptDl",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "processed"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "github/hospital_admissions_weekly",
+				"fileSystem": "processed"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

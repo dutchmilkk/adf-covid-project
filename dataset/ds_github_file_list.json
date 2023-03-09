@@ -1,0 +1,36 @@
+{
+	"name": "ds_github_file_list",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "isBlob_CovidRptSA",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "lookup"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ecdc_file_list.json",
+				"container": "config"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sourceBaseURL": {
+					"type": "string"
+				},
+				"sourceRelativeURL": {
+					"type": "string"
+				},
+				"sinkFileName": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

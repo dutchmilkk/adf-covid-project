@@ -1,0 +1,9 @@
+{
+	"name": "covid-viriya-adf",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4c36b253-9e94-4845-9ba8-12d346b159c7",
+		"tenantId": "7007305e-2664-4e6b-b9a4-c4d5ccfd1524"
+	}
+}
